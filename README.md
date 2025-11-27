@@ -5,6 +5,8 @@
 ![MNE](https://img.shields.io/badge/Neuro-MNE-red)
 ![Status](https://img.shields.io/badge/Status-Research_Complete-green)
 
+### [Medium Article](https://medium.com/@visionbyangelic/decoding-the-unconscious-how-i-built-a-deep-learning-system-to-predict-burnout-99-recall-9d5757a92641)  
+
 ### 🚨 The Problem
 Cognitive fatigue causes >90% of accidents in logistics and heavy industry. Subjective self-reporting is unreliable due to the "metacognitive gap"—the brain masks exhaustion until it's too late.
 
