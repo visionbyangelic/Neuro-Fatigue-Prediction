@@ -58,7 +58,12 @@ This project implements the **Trejo Protocol (2005)**, identifying **Frontal The
     ```bash
     jupyter notebook notebooks/fatigue_prediction_CNN.ipynb
     ```
+## ⚠️ Limitations & Future Work
+To ensure transparency, we acknowledge the following constraints in this Proof-of-Concept:
+1. **Subject Generalization:** The model was trained on intra-subject data. Future work requires LOSO (Leave-One-Subject-Out) validation to ensure the model works on new users without calibration.
+2. **Signal Artifacts:** While Bandpass filtering removes drift, EOG (eye blink) artifacts in the Delta band (1-4Hz) remain a confounder. Future iterations will implement ICA (Independent Component Analysis) for cleaner neural isolation.
 
+---
 ## 📚 References
 * *Trejo, L. J., et al. (2005).* Measures and models for predicting cognitive fatigue.
 * *Ma, P., et al. (2025).* Monitoring nap deprivation-induced fatigue using fNIRS and deep learning.
