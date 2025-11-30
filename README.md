@@ -48,7 +48,7 @@ This project implements the **Trejo Protocol (2005)**, identifying **Frontal The
 ## 🚀 How to Run
 1.  Clone the repository:
     ```bash
-    git clone [https://github.com/visionbyangelic/Neuro-Fatigue-Prediction.git](https://github.com/visionbyangelic/Neuro-Fatigue-Prediction.git)
+    git clone https://github.com/visionbyangelic/Neuro-Fatigue-Prediction.git
     ```
 2.  Install dependencies:
     ```bash
@@ -58,10 +58,13 @@ This project implements the **Trejo Protocol (2005)**, identifying **Frontal The
     ```bash
     jupyter notebook notebooks/fatigue_prediction_CNN.ipynb
     ```
-## ⚠️ Limitations & Future Work
-To ensure transparency, we acknowledge the following constraints in this Proof-of-Concept:
-1. **Subject Generalization:** The model was trained on intra-subject data. Future work requires LOSO (Leave-One-Subject-Out) validation to ensure the model works on new users without calibration.
-2. **Signal Artifacts:** While Bandpass filtering removes drift, EOG (eye blink) artifacts in the Delta band (1-4Hz) remain a confounder. Future iterations will implement ICA (Independent Component Analysis) for cleaner neural isolation.
+## ⚠️ Experimental Design & Limitations
+**Why Intra-Subject?**
+For this Proof-of-Concept, I deliberately utilized an **Intra-Subject Design** to control for inter-subject variability (skull thickness, impedance). This validates that the physiological biomarker (Theta Spike) is detectable by the 1D-CNN before introducing morphological confounders.
+
+**Current Constraints:**
+1. **Generalization:** Future work requires **LOSO (Leave-One-Subject-Out)** validation to extend the model to new users without calibration.
+2. **Signal Artifacts:** While Bandpass filtering removes drift, EOG (eye blink) artifacts in the Delta band (1-4Hz) remain a potential confounder. Future iterations will implement **ICA (Independent Component Analysis)** for cleaner neural isolation.
 
 ---
 ## 📚 References
